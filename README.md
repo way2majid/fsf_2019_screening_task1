@@ -2,4 +2,4 @@
 
 ### Everywhere with you 
 
-##### emApp is webapp written in Python using Django web-framework. It connects people in a organization and facilitates the formation of Teams and assignments of Tasks to those Teams
+emApp is webapp written in Python using Django web-framework. It connects people in a organization and facilitates the formation of Teams and assignments of Tasks to those Teams
