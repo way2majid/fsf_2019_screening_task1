@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>New Task</h2>
+    <form method="POST" action="../create_task/">{% csrf_token %}
+    	<div>Task Name :<input type="text" name="task_name"></div>
+    	<div>
+    	<select name="team">
+    		{% for obj in team_list %}
+    		<option value="{{obj.id}}">{{obj.id}}</option>
+    		{% endfor %}
+    	</select>
+    	</div>
+    	<input type="hidden" name="user" value="{{request.user.username}}">
+        <button type="submit" class="save btn btn-primary">Save</button>
+    </form>
+{% endblock %}

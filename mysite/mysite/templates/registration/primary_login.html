@@ -1,0 +1,24 @@
+<!-- We've copied from signup.html, and then replaced 'Sign up' with 'Log in'-->
+{% extends 'base.html' %}
+
+<!-- We've used crispy forms library of django, pip install django-crispy-forms -->
+
+{% block content %}
+<div class="row justify-content-center">
+	<div class="col-6">
+		<div class="card">
+			<div class="card-body">
+				<h2>Welcome !</h2>
+				<form method="post" novalidate> <!-- remove browser by novalidate-->
+					{% csrf_token %}
+					{{ form.as_p }}
+					<button type="submit" class="btn btn-success">You have successfully created your account. Now you can access the emApp</button>
+					<a href="{% url 'login' %}">Click here to Log in</a> 
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+ href="{% url 'home' %}">My Site</a>

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>emApp</h2>
+<p>Welcome to world's best task manager app, {% if user.is_authenticated %}{{ user.username}} {% else %} visitor{% endif %} !</p>
+<p>
+	<strong>Total users registered : </strong> {{count}}<br>
+	<strong>Total Creators registered (from admin) : </strong> {{creator}} <br>
+	<strong>Total Tasks registered (from admin) : </strong> {{task}}<br>
+	<strong>Total Teams registered (from admin) :</strong> {{team}}
+
+	{% if not user.is_authenticated %}
+	<br><br><strong>Sign up now ! </strong> {% endif %}
+	{% if user.is_authenticated %}<br><br>
+	<a href="{% url 'task_new' %}"><strong>Create Task</strong></a><br>
+	<a href="{% url 'team_new' %}"><strong>Create Team</strong></a>
+
+	{% endif %}
+	
+	 
+
+
+</p>
+<!--{% if user.is_authenticated %}
+<a href="{% url 'form' %}">Click here to go to form</a>
+{% endif %}-->
+{% endblock %}
+
+
