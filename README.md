@@ -2,9 +2,14 @@
 
 ### Everywhere with you 
 
-emApp is webapp written in Python using Django web-framework. It connects people in a organization and facilitates the formation of Teams and assignments of Tasks to those Teams
+emApp is webapp written in Python using Django web-framework. It connects people in an organization and facilitates the formation of Teams and assignments of Tasks to those Teams
 
 ### How it works
 
-Allows a user to Sign-up <br>
-Allows authenticated user to log-in/ sign-in
+1) Allows a user to Sign-up <br>
+2) Allows authenticated user to log-in/ sign-in
+
+
+
+Allows autheticated an authenticated user to create Tasks <br>
+An authenticated use
