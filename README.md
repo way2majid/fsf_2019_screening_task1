@@ -9,11 +9,14 @@ emApp is webapp written in Python using Django web-framework. It connects people
 1) Allows a user to Sign-up <br>
 2) Allows authenticated user to log-in/ sign-in
 
+![](img/Screenshot.png)
 ![](img/Screenshot1.png)
 <br>
-Allows only an autheticated user to create Tasks <br>
-
+3) Allows only an autheticated user to create Tasks <br>
+<br>
 ![](img/Screenshot2.png)
 <br>
-
-
+4) Only an authenticated user can create Teams and assign members to a Team
+<br>
+![](img/Screenshot3.png)
+<br>
